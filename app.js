@@ -38,7 +38,7 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view);
 app.get('/tasks', tasks.view);
-app.get('/addTask', tasks.addTask);
+app.post('/addTask', tasks.addTask);
 
 
 // Example route
