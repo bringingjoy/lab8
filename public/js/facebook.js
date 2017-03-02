@@ -15,6 +15,6 @@ function changeUser(response) {
 	console.log(response);
 	$(".facebookLogin p").hide();
 	$("#name").text(response.name);
-	$("#photo").replaceWith(response.picture);
+	$("#photo").replaceWith(response.picture.data.url);
 
 }
