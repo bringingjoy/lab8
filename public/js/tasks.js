@@ -10,3 +10,10 @@ $('#taskForm').submit(function(e) {
     $.post('addTask', { taskName: taskName }, postCallback);
   });
 });
+
+
+function postCallback(res) {
+	$('.taskList').append('<li>' + res + '</li>');
+	$.('#addTask').val('');
+
+}
